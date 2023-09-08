@@ -1,0 +1,67 @@
+.indent {
+    text-indent: 50px;
+}
+
+@font-face {
+font-family: "vercetti";
+src: url("/vercetti/vercetti-regular-webfont.woff") format("woff");
+}
+
+body {
+    background-color: #C0C0C0;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #5A5A5A;
+  margin: -10px;
+  font-family: vercetti;
+}
+
+.header a {
+  float: left;
+  color: #C0C0C0;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header .active {
+  background-color: #C0C0C0;
+  color: #5A5A5A;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+img {
+    height: 300px;
+    width: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
