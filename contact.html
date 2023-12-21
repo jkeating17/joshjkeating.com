@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8">
-	<title>Josh Keating</title>
-	<link href="./style.css" rel="stylesheet" />
-</head>
-<body>
-<div class="header"><a class="logo" href="./home.html">JOSH KEATING</a>
-<div class="header-right">
-<a href="./home.html">Home</a> 
-<a href="./about-me.html">About Me</a> 
-<a id="contact" class="active" href="./contact.html">Contact</a>
-</div>
-</div>
-</body>
+	<head><meta charset="utf-8">
+		<title>Josh Keating</title>
+		<link href="./style.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        
+	</head>
+
+
+
+	<body>
+		<!-- This fetchs the header.html file and adds the active class to the specified page -->
+        <script> 
+            $(function(){
+                $("#header").load("header.html", function()  {
+                    jQuery('a[href="./contact.html"]').addClass('active');
+                });
+            });
+        </script>
+        <!-- This loads the header file -->
+		<div id="header"></div>
+	</body>
 </html>

@@ -4,7 +4,6 @@
         <title>Josh Keating</title>
         <link href="style.css" rel="stylesheet" />
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-        
     </head>
 
     <body>
@@ -12,21 +11,14 @@
         <script> 
             $(function(){
                 $("#header").load("header.html", function()  {
-                    jQuery('a[class="home"]').addClass('active');
+                    jQuery('a[href="./template.html"]').addClass('active');
                 });
             });
         </script>
         <!-- This loads the header file -->
         <div id="header"></div>
 
-        <div id="first-section">
-            <div id="first-left" class="first-section">
-                <p>Hello, I am Josh Keating and I am a Junior Mechanical Engineering student at UIUC.</p>
-            </div>
-            <div id="first-right" class="first-section">
 
-            </div>
-        </div>
 
     </body>
 </html>

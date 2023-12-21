@@ -1,61 +1,109 @@
 .indent {
-    text-indent: 50px;
+  text-indent: 50px;
 }
 
 @font-face {
 font-family: "vercetti";
-src: url("/vercetti/vercetti-regular-webfont.woff") format("woff");
+src: url("./fonts/vercetti-regular-webfont.woff") format("woff");
 }
 
 body {
-    background-color: #C0C0C0;
+  background-color: #D8D8D8;
 }
-
+/* HEADER */
 .header {
   overflow: hidden;
-  background-color: #5A5A5A;
+  background-color: #22311D;
   margin: -10px;
   font-family: vercetti;
+  line-height: 25px;
 }
 
 .header a {
   float: left;
-  color: #C0C0C0;
+  color: #D8D8D8;
   text-align: center;
   padding: 20px;
-  text-decoration: none;
   font-size: 18px;
-  line-height: 25px;
+  text-decoration: none;
+}
+
+.header a:hover {
+  background-color: #4A6741;
+  color: #D8D8D8;
+}
+
+.header .logo:hover {
+  background-color: #22311D;
+  color: #D8D8D8;
+}
+
+.header .active:hover {
+  background-color: #D8D8D8;
+  color: #22311D;
 }
 
 .header .logo {
   font-size: 25px;
+  padding-bottom: 0;
+  padding-right: 0;
   font-weight: bold;
+  text-align: center;
+  line-height: 29px;
+  color: #D8D8D8;
 }
 
-.header .active {
-  background-color: #C0C0C0;
-  color: #5A5A5A;
+.header .active{
+  background-color: #D8D8D8;
+  color: #22311D;
   padding: 20px;
   text-decoration: none;
   font-size: 18px;
-  line-height: 25px;
 }
 
 .header-right {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
+/* HOME.HTML */
+
+#first-section {
+  color:#D8D8D8;
+  margin-top:10px;
+  margin-left:-10px;
+  margin-right:-10px;
 }
+
+.first-section {
+  font-family: "vercetti";
+  color: #D8D8D8;
+  padding: 0px;
+}
+
+#first-left {
+  float: left;
+  background-color: #4A6741;
+  font-size: 60px;
+  line-height: 120px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#first-left p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#first-right {
+  float: right;
+  background-color: #D8D8D8;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
 
 img {
     height: 300px;
